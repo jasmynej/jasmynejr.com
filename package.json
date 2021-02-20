@@ -7,7 +7,8 @@
     "start": "nodemon client/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "node-sass --omit-source-map-url client/public/sass/mystyles.scss client/public/css/index.css",
-    "css-watch": "npm run css-build -- --watch"
+    "css-watch": "npm run css-build -- --watch",
+    "tailwind-build": "npx tailwindcss build client/public/css/index.css -o client/public/css/tailwind.css"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,12 @@
     "nodemon": "^2.0.7"
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.4",
     "bulma": "^0.9.2",
-    "node-sass": "^5.0.0"
+    "gulp-clean-css": "^4.3.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.6",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^2.0.3"
   }
 }
