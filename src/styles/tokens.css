@@ -1,0 +1,350 @@
+/* =========================================================================
+   Jasmynejr Consulting — design tokens
+   Source: claude.ai/design project "Jasmynejr Consulting Design System"
+   Floral-tech: muted rose, sage green, warm peach, soft cream + charcoal.
+   ========================================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  /* ---------- Brand palette (sampled from logo) ---------- */
+  --color-rose-50:   #FDF4F1;
+  --color-rose-100:  #FBE6E0;
+  --color-rose-200:  #F5C7BE;
+  --color-rose-300:  #EFA9C7;
+  --color-rose-400:  #F58A8A;
+  --color-rose-500:  #E96A85;
+  --color-rose-600:  #C8526C;
+  --color-rose-700:  #9F3F55;
+
+  --color-sage-50:   #F2F2EE;
+  --color-sage-100:  #E3E4DC;
+  --color-sage-200:  #C6C9BB;
+  --color-sage-300:  #9CA18C;
+  --color-sage-400:  #7C8169;
+  --color-sage-500:  #697058;
+  --color-sage-600:  #5C6157;
+
+  --color-peach-50:  #FBF6EE;
+  --color-peach-100: #F2E4CC;
+  --color-peach-200: #E4CB9E;
+  --color-peach-300: #CDA968;
+  --color-peach-400: #B48D4C;
+  --color-peach-500: #9C7A4E;
+
+  --color-plum-300:  #A685B0;
+  --color-plum-500:  #7B5A8A;
+  --color-plum-700:  #553B62;
+
+  --color-cream-50:  #FDFAF6;
+  --color-cream-100: #FBF3EB;
+  --color-cream-200: #F4E9DC;
+  --color-stone-300: #D9CFC2;
+  --color-stone-400: #B0A698;
+  --color-stone-500: #7C7367;
+  --color-ink-700:   #4A433B;
+  --color-ink-800:   #2F2A24;
+  --color-ink-900:   #1F1B17;
+
+  /* ---------- Semantic tokens ---------- */
+  --color-bg:            var(--color-cream-50);
+  --color-bg-soft:       var(--color-cream-100);
+  --color-bg-muted:      var(--color-cream-200);
+  --color-surface:       #FFFFFF;
+  --color-surface-alt:   var(--color-cream-100);
+
+  --color-fg:            var(--color-ink-900);
+  --color-fg-muted:      var(--color-ink-700);
+  --color-fg-subtle:     var(--color-stone-500);
+  --color-fg-on-dark:    var(--color-cream-50);
+
+  --color-border:        #E8DDCE;
+  --color-border-strong: var(--color-stone-300);
+  --color-divider:       #EFE4D4;
+
+  --color-primary:       var(--color-rose-500);
+  --color-primary-hover: var(--color-rose-600);
+  --color-primary-press: var(--color-rose-700);
+  --color-on-primary:    #FFFFFF;
+
+  --color-secondary:       var(--color-sage-400);
+  --color-secondary-hover: var(--color-sage-500);
+  --color-secondary-press: var(--color-sage-600);
+  --color-on-secondary:    #FFFFFF;
+
+  --color-accent:       var(--color-peach-300);
+  --color-accent-hover: var(--color-peach-500);
+
+  --color-link:       var(--color-plum-500);
+  --color-link-hover: var(--color-plum-700);
+
+  --color-success: #5C8A5E;
+  --color-warning: var(--color-peach-500);
+  --color-danger:  #B5384E;
+  --color-info:    var(--color-plum-500);
+
+  --color-focus-ring: color-mix(in oklab, var(--color-rose-500) 60%, transparent);
+
+  /* ---------- Typography ---------- */
+  --font-display: "Manrope", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-accent:  "Cormorant Garamond", Georgia, serif;
+  --font-body:    "Manrope", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", "SF Mono", ui-monospace, Menlo, monospace;
+
+  /* Type scale — 1.25 (major third) on a 16px base. Additive alongside
+     Tailwind's default named scale (text-sm, text-lg, …). */
+  --text-12: 0.75rem;
+  --text-14: 0.875rem;
+  --text-16: 1rem;
+  --text-18: 1.125rem;
+  --text-20: 1.25rem;
+  --text-24: 1.5rem;
+  --text-30: 1.875rem;
+  --text-36: 2.25rem;
+  --text-48: 3rem;
+  --text-64: 4rem;
+
+  --leading-tight:   1.15;
+  --leading-snug:    1.3;
+  --leading-normal:  1.55;
+  --leading-relaxed: 1.7;
+
+  --tracking-tight:   -0.02em;
+  --tracking-wide:    0.04em;
+  --tracking-eyebrow: 0.14em;
+
+  /* ---------- Spacing (4px scale) — overrides Tailwind's default numeric
+     scale so padding, margin, and gap utilities line up exactly with the brand's rhythm. ---------- */
+  --spacing-1:  0.25rem;
+  --spacing-2:  0.5rem;
+  --spacing-3:  0.75rem;
+  --spacing-4:  1rem;
+  --spacing-5:  1.5rem;
+  --spacing-6:  2rem;
+  --spacing-7:  2.5rem;
+  --spacing-8:  3rem;
+  --spacing-9:  4rem;
+  --spacing-10: 5rem;
+  --spacing-11: 6rem;
+  --spacing-12: 8rem;
+
+  /* ---------- Radii (squared-off but not sharp) ---------- */
+  --radius-xs:   3px;
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  20px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows / elevation (warm-tinted) ---------- */
+  --shadow-xs:    0 1px 2px rgba(80, 50, 30, 0.05);
+  --shadow-sm:    0 2px 6px rgba(80, 50, 30, 0.06), 0 1px 2px rgba(80, 50, 30, 0.04);
+  --shadow-md:    0 8px 20px rgba(80, 50, 30, 0.08), 0 2px 6px rgba(80, 50, 30, 0.05);
+  --shadow-lg:    0 18px 40px rgba(80, 50, 30, 0.10), 0 4px 12px rgba(80, 50, 30, 0.06);
+  --shadow-xl:    0 30px 60px rgba(80, 50, 30, 0.14), 0 10px 24px rgba(80, 50, 30, 0.08);
+  --shadow-inset: inset 0 1px 2px rgba(80, 50, 30, 0.06);
+  --shadow-focus: 0 0 0 4px var(--color-focus-ring);
+
+  /* ---------- Motion ---------- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast: 140ms;
+  --duration-base: 220ms;
+  --duration-slow: 420ms;
+
+  /* ---------- Containers ---------- */
+  --container-sm: 640px;
+  --container-md: 800px;
+  --container-lg: 1080px;
+  --container-xl: 1280px;
+}
+
+/* =========================================================================
+   Base element styles — drop-in defaults, adapted from the source system.
+   ========================================================================= */
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--text-16);
+    line-height: var(--leading-normal);
+    color: var(--color-fg);
+    background: var(--color-bg);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .display,
+  h1.display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.5rem, 5vw + 1rem, var(--text-64));
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-fg);
+    text-wrap: balance;
+  }
+
+  h1,
+  .h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-48);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-fg);
+    text-wrap: balance;
+  }
+
+  h2,
+  .h2 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-36);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-fg);
+    text-wrap: balance;
+  }
+
+  h3,
+  .h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-30);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-fg);
+  }
+
+  .accent-serif {
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  h4,
+  .h4 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: var(--text-24);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-fg);
+  }
+
+  h5,
+  .h5 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: var(--text-20);
+    line-height: var(--leading-snug);
+    color: var(--color-fg);
+  }
+
+  p,
+  .body {
+    font-size: var(--text-16);
+    line-height: var(--leading-relaxed);
+    color: var(--color-fg);
+    text-wrap: pretty;
+  }
+
+  .lead {
+    font-size: var(--text-18);
+    line-height: var(--leading-relaxed);
+    color: var(--color-fg-muted);
+    font-weight: 400;
+  }
+
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-12);
+    font-weight: 600;
+    letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  .meta,
+  small {
+    font-size: var(--text-14);
+    color: var(--color-fg-subtle);
+    line-height: var(--leading-normal);
+  }
+
+  a {
+    color: var(--color-link);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: color-mix(in oklab, var(--color-link) 35%, transparent);
+    transition:
+      color var(--duration-fast) var(--ease-standard),
+      text-decoration-color var(--duration-fast) var(--ease-standard);
+  }
+  a:hover {
+    color: var(--color-link-hover);
+    text-decoration-color: var(--color-link-hover);
+  }
+
+  code,
+  kbd,
+  samp,
+  pre,
+  .mono {
+    font-family: var(--font-mono);
+    font-size: 0.92em;
+  }
+
+  code {
+    background: var(--color-cream-100);
+    border: 1px solid var(--color-border);
+    padding: 0.1em 0.4em;
+    border-radius: var(--radius-xs);
+    color: var(--color-ink-800);
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: var(--color-divider);
+    margin: var(--spacing-7) 0;
+  }
+
+  ::selection {
+    background: var(--color-rose-200);
+    color: var(--color-ink-900);
+  }
+
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+    border-radius: var(--radius-sm);
+  }
+}
