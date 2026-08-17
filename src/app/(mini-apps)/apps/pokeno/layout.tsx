@@ -3,11 +3,11 @@ import './styles.css'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  description: 'Jasmyne Jean-Remy personal site',
-  title: 'Jasmyne Jean-Remy',
+  description: 'Pokeno card shuffler and board generator',
+  title: 'Pokeno Tools',
 }
 
-export default async function RootLayout(props: { children: React.ReactNode }) {
+export default async function PokenoLayout(props: { children: React.ReactNode }) {
   const { children } = props
 
   return (
