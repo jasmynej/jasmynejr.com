@@ -1,0 +1,377 @@
+{
+  "cards": [
+    {
+      "rank": "ace",
+      "number": 1,
+      "suit": "spades",
+      "name": "Ace Of Spades",
+      "image": "/playing-cards/001-ace of spades.svg"
+    },
+    {
+      "rank": "ace",
+      "number": 1,
+      "suit": "clubs",
+      "name": "Ace Of Clubs",
+      "image": "/playing-cards/002-ace of clubs.svg"
+    },
+    {
+      "rank": "ace",
+      "number": 1,
+      "suit": "diamonds",
+      "name": "Ace Of Diamonds",
+      "image": "/playing-cards/003-ace of diamonds.svg"
+    },
+    {
+      "rank": "ace",
+      "number": 1,
+      "suit": "hearts",
+      "name": "Ace Of Hearts",
+      "image": "/playing-cards/004-ace of hearts.svg"
+    },
+    {
+      "rank": "two",
+      "number": 2,
+      "suit": "spades",
+      "name": "Two Of Spades",
+      "image": "/playing-cards/005-two of spades.svg"
+    },
+    {
+      "rank": "two",
+      "number": 2,
+      "suit": "clubs",
+      "name": "Two Of Clubs",
+      "image": "/playing-cards/006-two of clubs.svg"
+    },
+    {
+      "rank": "two",
+      "number": 2,
+      "suit": "diamonds",
+      "name": "Two Of Diamonds",
+      "image": "/playing-cards/007-two of diamonds.svg"
+    },
+    {
+      "rank": "two",
+      "number": 2,
+      "suit": "hearts",
+      "name": "Two Of Hearts",
+      "image": "/playing-cards/008-two of hearts.svg"
+    },
+    {
+      "rank": "three",
+      "number": 3,
+      "suit": "spades",
+      "name": "Three Of Spades",
+      "image": "/playing-cards/009-three of spades.svg"
+    },
+    {
+      "rank": "three",
+      "number": 3,
+      "suit": "clubs",
+      "name": "Three Of Clubs",
+      "image": "/playing-cards/010-three of clubs.svg"
+    },
+    {
+      "rank": "three",
+      "number": 3,
+      "suit": "diamonds",
+      "name": "Three Of Diamonds",
+      "image": "/playing-cards/011-three of diamonds.svg"
+    },
+    {
+      "rank": "three",
+      "number": 3,
+      "suit": "hearts",
+      "name": "Three Of Hearts",
+      "image": "/playing-cards/012-three of hearts.svg"
+    },
+    {
+      "rank": "four",
+      "number": 4,
+      "suit": "spades",
+      "name": "Four Of Spades",
+      "image": "/playing-cards/013-four of spades.svg"
+    },
+    {
+      "rank": "four",
+      "number": 4,
+      "suit": "clubs",
+      "name": "Four Of Clubs",
+      "image": "/playing-cards/014-four of clubs.svg"
+    },
+    {
+      "rank": "four",
+      "number": 4,
+      "suit": "diamonds",
+      "name": "Four Of Diamonds",
+      "image": "/playing-cards/015-four of diamonds.svg"
+    },
+    {
+      "rank": "four",
+      "number": 4,
+      "suit": "hearts",
+      "name": "Four Of Hearts",
+      "image": "/playing-cards/016-four of hearts.svg"
+    },
+    {
+      "rank": "five",
+      "number": 5,
+      "suit": "spades",
+      "name": "Five Of Spades",
+      "image": "/playing-cards/017-five of spades.svg"
+    },
+    {
+      "rank": "five",
+      "number": 5,
+      "suit": "clubs",
+      "name": "Five Of Clubs",
+      "image": "/playing-cards/018-five of clubs.svg"
+    },
+    {
+      "rank": "five",
+      "number": 5,
+      "suit": "diamonds",
+      "name": "Five Of Diamonds",
+      "image": "/playing-cards/019-five of diamonds.svg"
+    },
+    {
+      "rank": "five",
+      "number": 5,
+      "suit": "hearts",
+      "name": "Five Of Hearts",
+      "image": "/playing-cards/020-five of hearts.svg"
+    },
+    {
+      "rank": "six",
+      "number": 6,
+      "suit": "spades",
+      "name": "Six Of Spades",
+      "image": "/playing-cards/021-six of spades.svg"
+    },
+    {
+      "rank": "six",
+      "number": 6,
+      "suit": "clubs",
+      "name": "Six Of Clubs",
+      "image": "/playing-cards/022-six of clubs.svg"
+    },
+    {
+      "rank": "six",
+      "number": 6,
+      "suit": "diamonds",
+      "name": "Six Of Diamonds",
+      "image": "/playing-cards/023-six of diamonds.svg"
+    },
+    {
+      "rank": "six",
+      "number": 6,
+      "suit": "hearts",
+      "name": "Six Of Hearts",
+      "image": "/playing-cards/024-six of hearts.svg"
+    },
+    {
+      "rank": "seven",
+      "number": 7,
+      "suit": "spades",
+      "name": "Seven Of Spades",
+      "image": "/playing-cards/025-seven of spades.svg"
+    },
+    {
+      "rank": "seven",
+      "number": 7,
+      "suit": "clubs",
+      "name": "Seven Of Clubs",
+      "image": "/playing-cards/026-seven of clubs.svg"
+    },
+    {
+      "rank": "seven",
+      "number": 7,
+      "suit": "diamonds",
+      "name": "Seven Of Diamonds",
+      "image": "/playing-cards/027-seven of diamonds.svg"
+    },
+    {
+      "rank": "seven",
+      "number": 7,
+      "suit": "hearts",
+      "name": "Seven Of Hearts",
+      "image": "/playing-cards/028-seven of hearts.svg"
+    },
+    {
+      "rank": "eight",
+      "number": 8,
+      "suit": "spades",
+      "name": "Eight Of Spades",
+      "image": "/playing-cards/029-eight of spades.svg"
+    },
+    {
+      "rank": "eight",
+      "number": 8,
+      "suit": "clubs",
+      "name": "Eight Of Clubs",
+      "image": "/playing-cards/030-eight of clubs.svg"
+    },
+    {
+      "rank": "eight",
+      "number": 8,
+      "suit": "diamonds",
+      "name": "Eight Of Diamonds",
+      "image": "/playing-cards/031-eight of diamonds.svg"
+    },
+    {
+      "rank": "eight",
+      "number": 8,
+      "suit": "hearts",
+      "name": "Eight Of Hearts",
+      "image": "/playing-cards/032-eight of hearts.svg"
+    },
+    {
+      "rank": "nine",
+      "number": 9,
+      "suit": "spades",
+      "name": "Nine Of Spades",
+      "image": "/playing-cards/033-nine of spades.svg"
+    },
+    {
+      "rank": "nine",
+      "number": 9,
+      "suit": "clubs",
+      "name": "Nine Of Clubs",
+      "image": "/playing-cards/034-nine of clubs.svg"
+    },
+    {
+      "rank": "nine",
+      "number": 9,
+      "suit": "diamonds",
+      "name": "Nine Of Diamonds",
+      "image": "/playing-cards/035-nine of diamonds.svg"
+    },
+    {
+      "rank": "nine",
+      "number": 9,
+      "suit": "hearts",
+      "name": "Nine Of Hearts",
+      "image": "/playing-cards/036-nine of hearts.svg"
+    },
+    {
+      "rank": "ten",
+      "number": 10,
+      "suit": "spades",
+      "name": "Ten Of Spades",
+      "image": "/playing-cards/037-ten of spades.svg"
+    },
+    {
+      "rank": "ten",
+      "number": 10,
+      "suit": "clubs",
+      "name": "Ten Of Clubs",
+      "image": "/playing-cards/038-ten of clubs.svg"
+    },
+    {
+      "rank": "ten",
+      "number": 10,
+      "suit": "diamonds",
+      "name": "Ten Of Diamonds",
+      "image": "/playing-cards/039-ten of diamonds.svg"
+    },
+    {
+      "rank": "ten",
+      "number": 10,
+      "suit": "hearts",
+      "name": "Ten Of Hearts",
+      "image": "/playing-cards/040-ten of hearts.svg"
+    },
+    {
+      "rank": "jack",
+      "number": 11,
+      "suit": "spades",
+      "name": "Jack Of Spades",
+      "image": "/playing-cards/041-jack of spades.svg"
+    },
+    {
+      "rank": "jack",
+      "number": 11,
+      "suit": "clubs",
+      "name": "Jack Of Clubs",
+      "image": "/playing-cards/042-jack of clubs.svg"
+    },
+    {
+      "rank": "jack",
+      "number": 11,
+      "suit": "diamonds",
+      "name": "Jack Of Diamonds",
+      "image": "/playing-cards/043-jack of diamonds.svg"
+    },
+    {
+      "rank": "jack",
+      "number": 11,
+      "suit": "hearts",
+      "name": "Jack Of Hearts",
+      "image": "/playing-cards/044-jack of hearts.svg"
+    },
+    {
+      "rank": "queen",
+      "number": 12,
+      "suit": "spades",
+      "name": "Queen Of Spades",
+      "image": "/playing-cards/045-queen of spades.svg"
+    },
+    {
+      "rank": "queen",
+      "number": 12,
+      "suit": "clubs",
+      "name": "Queen Of Clubs",
+      "image": "/playing-cards/046-queen of clubs.svg"
+    },
+    {
+      "rank": "queen",
+      "number": 12,
+      "suit": "diamonds",
+      "name": "Queen Of Diamonds",
+      "image": "/playing-cards/047-queen of diamonds.svg"
+    },
+    {
+      "rank": "queen",
+      "number": 12,
+      "suit": "hearts",
+      "name": "Queen Of Hearts",
+      "image": "/playing-cards/048-queen of hearts.svg"
+    },
+    {
+      "rank": "king",
+      "number": 13,
+      "suit": "spades",
+      "name": "King Of Spades",
+      "image": "/playing-cards/049-king of spades.svg"
+    },
+    {
+      "rank": "king",
+      "number": 13,
+      "suit": "clubs",
+      "name": "King Of Clubs",
+      "image": "/playing-cards/050-king of clubs.svg"
+    },
+    {
+      "rank": "king",
+      "number": 13,
+      "suit": "diamonds",
+      "name": "King Of Diamonds",
+      "image": "/playing-cards/051-king of diamonds.svg"
+    },
+    {
+      "rank": "king",
+      "number": 13,
+      "suit": "hearts",
+      "name": "King Of Hearts",
+      "image": "/playing-cards/052-king of hearts.svg"
+    }
+  ],
+  "jokers": [
+    {
+      "rank": null,
+      "number": null,
+      "suit": null,
+      "name": "Joker",
+      "image": "/playing-cards/053-joker.svg"
+    }
+  ]
+}
